@@ -63,7 +63,7 @@ const playListSongs = songs.filter((song) => song.albumId === playlist?.albumId)
         </div>
 
         <section class="p-6">
-            <MusicsTable songs={playListSongs} />
+            <MusicsTable songs={playListSongs} client:load />
         </section>
     </div>
 </Layout>
