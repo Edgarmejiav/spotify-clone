@@ -2,7 +2,6 @@
 import Time from "@/icons/Time.astro"
 import {type Song} from "@/lib/data"
 import CardPlayButton from "./CardPlayButton";
-import {Play, Player} from "./Player";
 
 interface Props {
     songs: Song[]
@@ -29,12 +28,12 @@ const {songs} = Astro.props
         songs.map((song, index) => (
                 <tr class="border-spacing-0 text-gray-300 text-sm font-light hover:bg-white/10 overflow-hidden transition duration-300">
                     <td class="px-4 py-2 rounded-tl-lg rounded-bl-lg  w-5 ">
-                            <div class="flex flex-row gap-2  items-center">
+                        <div class="flex flex-row gap-2  items-center">
 
 
-                        {index + 1}
-                            <CardPlayButton id={song.albumId} song={song}  client:load size="small" variant="table"/>
-                            </div>
+                            {index + 1}
+                            <CardPlayButton id={song.albumId} song={song} client:load size="small" variant="table"/>
+                        </div>
 
                     </td>
                     <td class="px-4 py-2 flex gap-3">
