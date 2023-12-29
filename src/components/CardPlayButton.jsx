@@ -2,7 +2,7 @@ import {Pause, Play} from "./Player"
 import {usePlayerStore} from '@/store/playerStore'
 
 
-export function CardPlayButton({id, song, size = 'small',variant } ) {
+export default function CardPlayButton({id, song, size = 'small',variant } ) {
     const {
         currentMusic,
         isPlaying,

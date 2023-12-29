@@ -1,7 +1,7 @@
 ---
 import Time from "@/icons/Time.astro"
 import {type Song} from "@/lib/data"
-import {CardPlayButton} from "./CardPlayButton";
+import CardPlayButton from "./CardPlayButton";
 import {Play, Player} from "./Player";
 
 interface Props {
@@ -33,7 +33,7 @@ const {songs} = Astro.props
 
 
                         {index + 1}
-                            <CardPlayButton song={song}  client:load size="small" variant="table"/>
+                            <CardPlayButton id={song.albumId} song={song}  client:load size="small" variant="table"/>
                             </div>
 
                     </td>
