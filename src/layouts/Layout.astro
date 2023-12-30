@@ -13,7 +13,20 @@ const {title} = Astro.props;
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="Astro description"/>
+
+    <meta name="description"
+          content="Un clon de Spotify que te permite descubrir, reproducir y compartir tu música favorita en línea."/>
+    <meta name="keywords" content="Spotify, música, clon, reproducción en línea, descubrimiento de música"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="index, follow"/>
+    <meta property="og:title" content="Spotify Clone"/>
+    <meta property="og:description"
+          content="Explora y disfruta de tu música favorita en línea con este clon de Spotify."/>
+    <meta property="og:url" content="https://github.com/Edgarmejiav/spotify-clone"/>
+    <meta name="twitter:title" content="Spotify Clone"/>
+    <meta name="twitter:description"
+          content="Explora y disfruta de tu música favorita en línea con este clon de Spotify."/>
+
     <meta name="viewport" content="width=device-width"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="generator" content={Astro.generator}/>
@@ -30,7 +43,7 @@ const {title} = Astro.props;
         <slot/>
     </main>
     <footer class="[grid-area:player]  h-[80px]">
-        <Player client:load transition:name="media-player" transition:persist />
+        <Player client:load transition:name="media-player" transition:persist/>
     </footer>
 </div>
 </body>
